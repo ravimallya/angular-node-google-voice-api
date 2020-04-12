@@ -1,0 +1,43 @@
+<div class="container-fluid  h-100">
+    <div class="row  h-100">
+        <div class="col-md-3 col-lg-2 pt-4 sidebar">
+            <img src="assets/images/mic-icon.svg" class="img-fluid" alt="">
+            <div class="border-top mt-4">
+                <h5 class="text-white text-nowrap text-center pt-3">Audio Transcription<br/> Service</h5>
+            </div>
+            <div class="border-top mt-4">
+                <ul class="list-unstyled text-center pt-2">
+                    <li class="pt-2">
+                        <a class="text-white" [routerLink]="'/dashboard'" routerLinkActive="active">My Transcripts</a>
+                    </li>
+                    <li class="pt-2">
+                        <a class="text-white" [routerLink]="'/shared'" routerLinkActive="active">Shared Transcripts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 px-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Speech to Text</a>
+                <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse" [collapse]="isCollapsed">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="onLogout()" href="javascript:void(0)">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

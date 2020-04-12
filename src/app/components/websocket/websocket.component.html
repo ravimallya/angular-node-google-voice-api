@@ -1,0 +1,4 @@
+<p>websocket works!</p>
+<button (click)="onRecord()" [disabled]="streamStreaming">Start Record</button>
+<button (click)="onStop()" [disabled]="!streamStreaming">Stop Record</button>
+<div class="wraptext" #ResultText><span class="greyText"></span></div>

@@ -1,0 +1,17 @@
+.btn-mic,
+.btn-stop {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    border-radius: 100%;
+    i {
+        font-size: 3rem;
+    }
+}
+
+.wraptext {
+    span {
+        white-space: nowrap;
+        display: inline-block;
+    }
+}
