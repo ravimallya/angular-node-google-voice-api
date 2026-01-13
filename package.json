@@ -28,7 +28,7 @@
         "bootstrap-scss": "^4.4.1",
         "compromise": "^13.0.0",
         "dotenv": "^8.2.0",
-        "express": "^4.17.1",
+        "express": "^4.21.2",
         "http-errors": "^1.7.3",
         "i": "^0.3.6",
         "moment": "^2.24.0",
